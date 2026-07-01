@@ -42,9 +42,9 @@
             <button onclick="switchTab('d1')" id="tab-d1" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md transition">D1 (7/11)</button>
             <button onclick="switchTab('d2')" id="tab-d2" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md transition">D2 (7/12)</button>
             <button onclick="switchTab('d3')" id="tab-d3" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md transition">D3 (7/13) ⏳</button>
-            <button onclick="switchTab('d4')" id="tab-d4" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md transition">D4 (7/14)</button>
+            <button onclick="switchTab('d4')" id="tab-d4" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md border-amber-400/50 transition">D4 (7/14) 🌟</button>
             <button onclick="switchTab('d5')" id="tab-d5" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md transition">D5 (7/15)</button>
-            <button onclick="switchTab('d6')" id="tab-d6" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md border-amber-400/50 transition">D6 (7/16) 🌟</button>
+            <button onclick="switchTab('d6')" id="tab-d6" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md transition">D6 (7/16)</button>
             <button onclick="switchTab('d7')" id="tab-d7" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md transition">D7 (7/17)</button>
             <button onclick="switchTab('d8')" id="tab-d8" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md transition">D8 (7/18)</button>
         </div>
@@ -67,7 +67,7 @@
                     <p><i class="fa-solid fa-calendar-check mr-2 text-amber-400"></i><strong>時程：</strong>7月11日 入住 ～ 7月18日 退房 (7夜)</p>
                     <p><i class="fa-solid fa-bed mr-2 text-amber-400"></i><strong>房型：</strong>ONE BEDROOM SUITE (豪華單臥室套房)</p>
                     <p><i class="fa-solid fa-qrcode mr-2 text-amber-400"></i><strong>確認號：</strong><span class="font-mono text-amber-300 bg-slate-800 px-2 py-0.5 rounded border border-slate-700">64554SG032416-</span></p>
-                    <p><i class="fa-solid fa-users mr-2 text-amber-400"></i><strong>需求：</strong>3位成人 (加一床 / 高樓層景觀房 / 禁菸)</p>
+                    <p><i class="fa-solid fa-users mr-2 text-amber-400"></i><strong>編制需求：</strong>3位成人 (加一床 / 高樓層景觀房 / 禁菸)</p>
                     <p><i class="fa-solid fa-map-location mr-2 text-amber-400"></i><strong>地址：</strong>1-1-1 PACIFIC CENTURY PLACE, MARUNOUCHI, TOKYO</p>
                     <p><i class="fa-solid fa-phone mr-2 text-amber-400"></i><strong>電話：</strong>+81-3-52227222</p>
                 </div>
@@ -160,7 +160,7 @@
                     <input type="checkbox" onclick="updateProgress('d2')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
                     <div class="flex-1">
                         <h4 class="font-bold text-sm text-white">上午：日本橋、三越百貨、COREDO室町散策</h4>
-                        <p class="text-xs text-slate-400 mt-1">自四季酒店大廳漫步至日本橋傳統街區，安排輕鬆逛街為最合理的時差緩衝。</p>
+                        <p class="text-xs text-slate-400 mt-1">自四季酒店大廳漫步至日本橋傳統街區。剛抵達前幾天安排輕鬆逛街為最合理的時差緩衝。</p>
                     </div>
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=日本橋三越本店" target="_blank" class="w-full flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs py-1.5 rounded-lg border border-slate-700 transition"><i class="fa-solid fa-map"></i> <span>🗺️ 導航至日本橋三越</span></a>
@@ -214,75 +214,145 @@
             </div>
         </div>
 
-        <!-- ================= CONTENT: DAY 4 (🌟 金澤精密動線) ================= -->
+        <!-- ================= CONTENT: DAY 4 (🌟 金澤 12 小時高效率升級版) ================= -->
         <div id="content-d4" class="tab-content space-y-4">
             <div class="flex justify-between items-center text-xs font-bold text-slate-400 px-1">
-                <span>📅 07/14 (二) 金澤一日遊 · 加賀古都藝術美學</span>
+                <span>📅 07/14 (二) 金澤一日遊 · 加賀古都精準高效美學</span>
                 <span id="progress-d4" class="text-amber-400">0% 完成</span>
             </div>
-            <div class="bg-slate-900 text-white p-3 rounded-xl text-xs flex justify-between items-center shadow-sm font-bold border border-slate-800">
-                <span>🚄 【東京車站】直發 ➔ 金澤 (北陸新幹線かがやき)</span>
-                <span class="text-amber-400">單程約 2.5hr</span>
-            </div>
-
-            <div class="dark-card p-4 rounded-2xl space-y-2">
-                <div class="flex justify-between text-[11px] font-mono text-slate-500">
-                    <span>🕒 去程出發：07:20 ➔ 09:48</span>
-                    <span class="text-amber-400 font-bold">かがやき 503號</span>
+            
+            <!-- 新幹線時刻摘要 -->
+            <div class="bg-gradient-to-br from-slate-900 to-indigo-950 p-4 rounded-2xl border border-amber-500/20 text-xs space-y-2">
+                <div class="text-amber-400 font-bold flex items-center justify-between">
+                    <span>🚄 北陸新幹線 かがやき (全車指定席)</span>
+                    <span class="bg-amber-400 text-slate-950 px-2 py-0.5 text-[10px] font-black rounded">黃金停留 12hr 15min</span>
                 </div>
-                <h4 class="font-bold text-sm text-white mt-0.5">搭乘極速新幹線直達金澤</h4>
-                <p class="text-xs text-slate-400 mt-1">全車皆為指定席，建議提早劃位（亦可直接升等 Gran Class 特等車廂）。</p>
+                <div class="text-slate-300 font-mono space-y-1">
+                    <p>• <strong>去程 (501號)：</strong>06:16 東京站發車 ➔ 08:46 抵達金澤站 (2h30m)</p>
+                    <p>• <strong>回程 (516號)：</strong>21:01 金澤站發車 ➔ 23:32 返回東京站 (2h31m)</p>
+                </div>
             </div>
 
-            <div class="dark-card p-4 rounded-2xl space-y-3">
-                <div class="flex items-start space-x-3">
-                    <input type="checkbox" onclick="updateProgress('d4')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
-                    <div class="flex-1">
-                        <h4 class="font-bold text-sm text-white">1. 東茶屋街 ➔ 兼六園 (上午美學散策)</h4>
-                        <p class="text-xs text-slate-400 mt-1">漫步木造格子窗建築街廓、品嚐金箔霜淇淋。隨後前往日本三大名園「兼六園」觀賞徽軫石燈籠（門票 ¥320）。</p>
+            <!-- 12小時精準時間軸卡片 -->
+            <div class="space-y-3">
+                
+                <!-- 08:46 - 09:15 -->
+                <div class="dark-card p-4 rounded-2xl space-y-2">
+                    <div class="flex justify-between text-[11px] font-mono text-slate-500">
+                        <span>🕒 08:46 – 09:15</span>
+                        <span class="text-amber-400 font-bold">抵達與晨間朝聖</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <input type="checkbox" onclick="updateProgress('d4')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
+                        <div class="flex-1">
+                            <h4 class="font-bold text-sm text-white">金澤站鼓門朝盛 ➔ 計程車直奔兼六園</h4>
+                            <p class="text-xs text-slate-400 mt-1 leading-relaxed">抵達金澤站，出站後先至廣場朝聖宏偉的「鼓門」與玻璃巨幕。隨後迅速搭乘計程車（約 10 分鐘），爭取清晨遊客最少的黃金時刻前往名園。</p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=金澤車站" target="_blank" class="w-full text-center block bg-slate-800 text-slate-300 text-xs py-1.5 rounded-lg border border-slate-700 hover:bg-slate-700 transition"><i class="fa-solid fa-map"></i> <span>🗺️ 地圖定位：金澤站鼓門</span></a>
+                </div>
+
+                <!-- 09:15 – 10:45 -->
+                <div class="dark-card p-4 rounded-2xl space-y-2">
+                    <div class="flex justify-between text-[11px] font-mono text-slate-500">
+                        <span>🕒 09:15 – 10:45</span>
+                        <span class="text-amber-400 font-bold">大名庭園晨間漫步</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <input type="checkbox" onclick="updateProgress('d4')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
+                        <div class="flex-1">
+                            <h4 class="font-bold text-sm text-white">兼六園：感受「蒼古」與「幽邃」</h4>
+                            <p class="text-xs text-slate-400 mt-1 leading-relaxed">由蓮池門口入園，採取逆時針悠閒漫步，沿途欣賞具指標性的徽軫石燈籠、明鏡般的霞之池與壯觀的唐崎松。清晨的微風與絕美光影最能展現日本三大名園之首的內斂韻味。</p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=兼六園" target="_blank" class="w-full text-center block bg-slate-800 text-slate-300 text-xs py-1.5 rounded-lg border border-slate-700 hover:bg-slate-700 transition"><i class="fa-solid fa-leaf"></i> <span>🗺️ 地圖定位：兼六園</span></a>
+                </div>
+
+                <!-- 10:45 – 12:15 -->
+                <div class="dark-card p-4 rounded-2xl space-y-2">
+                    <div class="flex justify-between text-[11px] font-mono text-slate-500">
+                        <span>🕒 10:45 – 12:15</span>
+                        <span class="text-amber-400 font-bold">當代藝術視覺洗禮</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <input type="checkbox" onclick="updateProgress('d4')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
+                        <div class="flex-1">
+                            <h4 class="font-bold text-sm text-white">金澤 21 世紀美術館：朝聖《泳池》</h4>
+                            <p class="text-xs text-slate-400 mt-1 leading-relaxed">從兼六園真弓坂口步行僅 5 分鐘即可抵達美術館。集中參觀核心經典裝置藝術——林德羅·厄利什的《泳池》，並在圓形的全玻璃前衛空間中感受光影與現代建築的交織。</p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=金澤21世紀美術館" target="_blank" class="w-full text-center block bg-slate-800 text-slate-300 text-xs py-1.5 rounded-lg border border-slate-700 hover:bg-slate-700 transition"><i class="fa-solid fa-landmark"></i> <span>🗺️ 地圖定位：金澤21世紀美術館</span></a>
+                </div>
+
+                <!-- 12:30 – 14:00 -->
+                <div class="highlight-card p-5 rounded-2xl space-y-3">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-[10px] font-black text-amber-400 bg-amber-400/10 border border-amber-400/40 px-2.5 py-1 rounded-md">🕒 12:30 – 14:00 舌尖奢華</span>
+                            <h4 class="font-bold text-base text-white mt-2.5">午餐：近江町市場海鮮饗宴</h4>
+                            <p class="text-xs text-slate-300 mt-1 leading-relaxed">搭乘計程車（約 5 分鐘）前往金澤的廚房。預約市場內的頂級壽司名店（如 **もりもり壽司**）或海鮮丼專門店，品嚐當季最鮮甜的日本海黑喉魚 (Nodoguro)、北陸甜蝦與奢華海物。</p>
+                        </div>
+                        <i class="fa-solid fa-utensils text-amber-400 text-xl mt-1"></i>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=近江町市場" target="_blank" class="w-full flex items-center justify-center space-x-2 bg-amber-400 hover:bg-amber-500 text-slate-950 text-xs font-bold py-2.5 rounded-xl transition shadow-lg">
+                        <i class="fa-solid fa-location-arrow"></i> <span>🗺️ 地圖定位：近江町市場</span>
+                    </a>
+                </div>
+
+                <!-- 14:15 – 16:45 -->
+                <div class="dark-card p-4 rounded-2xl space-y-2">
+                    <div class="flex justify-between text-[11px] font-mono text-slate-500">
+                        <span>🕒 14:15 – 16:45</span>
+                        <span class="text-amber-400 font-bold">江戶時光的金色漫遊</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <input type="checkbox" onclick="updateProgress('d4')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
+                        <div class="flex-1">
+                            <h4 class="font-bold text-sm text-white">東茶屋街：金箔霜淇淋與高端工藝選物</h4>
+                            <p class="text-xs text-slate-400 mt-1 leading-relaxed">飽餐後步行 15 分鐘或搭計程車前往保存最完整的木造老街。漫步古樸石板路，至名店「箔一」品嚐奢華的金箔霜淇淋。走訪工藝選物店，挑選精緻的加賀九谷燒瓷器或山中漆器。</p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=東茶屋街" target="_blank" class="w-full text-center block bg-slate-800 text-slate-300 text-xs py-1.5 rounded-lg border border-slate-700 hover:bg-slate-700 transition"><i class="fa-solid fa-store"></i> <span>🗺️ 地圖定位：東茶屋街</span></a>
+                </div>
+
+                <!-- 17:00 – 18:30 -->
+                <div class="dark-card p-4 rounded-2xl space-y-2">
+                    <div class="flex justify-between text-[11px] font-mono text-slate-500">
+                        <span>🕒 17:00 – 18:30</span>
+                        <span class="text-amber-400 font-bold">加賀武士內斂黃昏</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <input type="checkbox" onclick="updateProgress('d4')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
+                        <div class="flex-1">
+                            <h4 class="font-bold text-sm text-white">長町武家屋敷跡：參訪米其林三星「野村家」</h4>
+                            <p class="text-xs text-slate-400 mt-1 leading-relaxed">黃昏前搭計程車轉往黃土牆與窄巷綿延的武士住宅區。特別安排進入獲得米其林三星評等的「野村家」邸宅，在夕陽餘暉的日式庭園中感受武士家族的隱忍、優雅與禪意。</p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=長町武家屋敷跡+野村家" target="_blank" class="w-full text-center block bg-slate-800 text-slate-300 text-xs py-1.5 rounded-lg border border-slate-700 hover:bg-slate-700 transition"><i class="fa-solid fa-monument"></i> <span>🗺️ 地圖定位：野村家武士住宅</span></a>
+                </div>
+
+                <!-- 18:45 – 20:30 -->
+                <div class="highlight-card p-5 rounded-2xl space-y-3">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-[10px] font-black text-amber-400 bg-amber-400/10 border border-amber-400/40 px-2.5 py-1 rounded-md">🕒 18:45 – 20:30 極致職人味蕾</span>
+                            <h4 class="font-bold text-base text-white mt-2.5">晚餐：金澤站周邊割烹、Omakase 或頂級天婦羅</h4>
+                            <p class="text-xs text-slate-300 mt-1 leading-relaxed">回到金澤站周邊，享用預約好的頂級職人割烹或 Omakase 壽司大餐。讓大師以最純熟的手藝將日本海剛上岸的珍貴漁獲與在地加賀野菜化為餐桌上的藝術，佐以北陸在地頂級名酒，為一日旅程劃下完美句點。</p>
+                        </div>
+                        <i class="fa-solid fa-wine-glass-alt text-amber-400 text-xl mt-1"></i>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <a href="https://www.google.com/maps/search/?api=1&query=東茶屋街" target="_blank" class="flex items-center justify-center space-x-1 bg-slate-800 hover:bg-slate-700 text-slate-300 py-1.5 text-xs rounded-lg border border-slate-700 transition"><i class="fa-solid fa-map"></i> <span>🗺️ 東茶屋街</span></a>
-                    <a href="https://www.google.com/maps/search/?api=1&query=兼六園" target="_blank" class="flex items-center justify-center space-x-1 bg-slate-800 hover:bg-slate-700 text-slate-300 py-1.5 text-xs rounded-lg border border-slate-700 transition"><i class="fa-solid fa-map"></i> <span>🗺️ 兼六園</span></a>
-                </div>
-            </div>
 
-            <div class="highlight-card p-5 rounded-2xl shadow-xl space-y-3">
-                <div class="flex justify-between items-start">
-                    <div>
-                        <span class="text-[10px] font-black text-amber-400 bg-amber-400/10 border border-amber-400/40 px-2.5 py-1 rounded-md">🕒 12:00 在地名店老饕午宴</span>
-                        <h4 class="font-bold text-base text-white mt-2.5">もりもり迴轉壽司</h4>
-                        <p class="text-xs text-slate-300 mt-1">金澤港產地直達的紅喉魚（のど黒）、激甜富山灣白蝦，食材鮮度堪稱神級的在地頂尖壽司。</p>
-                    </div>
-                    <i class="fa-solid fa-fish text-amber-400 text-xl mt-1"></i>
+                <!-- 21:01 -->
+                <div class="dark-card p-4 rounded-2xl border border-indigo-500/40 bg-slate-950">
+                    <div class="text-[11px] font-mono text-indigo-400 font-bold mb-1">🚄 21:01 歸途班次</div>
+                    <p class="text-xs text-slate-300">搭乘北陸新幹線 **かがやき (Kagayaki) 516號** 返回東京。預計 23:32 返抵東京車站，出站步行直達丸之內四季酒店奢華套房休息。</p>
                 </div>
-                <a href="https://www.google.com/maps/search/?api=1&query=もりもり寿し+金澤" target="_blank" class="w-full flex items-center justify-center space-x-2 bg-amber-400 hover:bg-amber-500 text-slate-950 text-xs font-bold py-2.5 rounded-xl transition shadow-lg">
-                    <i class="fa-solid fa-utensils"></i> <span>🗺️ 導航至 もりもり壽司</span>
-                </a>
-            </div>
 
-            <div class="dark-card p-4 rounded-2xl space-y-3">
-                <div class="flex items-start space-x-3">
-                    <input type="checkbox" onclick="updateProgress('d4')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
-                    <div class="flex-1">
-                        <h4 class="font-bold text-sm text-white">2. 金澤 21 世紀美術館</h4>
-                        <p class="text-xs text-slate-400 mt-1">朝聖當代大師經典裝置藝術「乾游泳池」(門票 ¥1,500)。⚠️ 地下游泳池密閉參觀區必須事先上官網進行預約。</p>
-                    </div>
-                </div>
-                <a href="https://www.google.com/maps/search/?api=1&query=金澤21世紀美術館" target="_blank" class="w-full flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs py-1.5 rounded-lg border border-slate-700 transition"><i class="fa-solid fa-map-location-dot"></i> <span>🗺️ 美術館導航</span></a>
-            </div>
-
-            <div class="dark-card p-4 rounded-2xl space-y-2">
-                <div class="flex justify-between text-[11px] font-mono text-slate-500">
-                    <span>🕒 回程出發：17:53 ➔ 20:23</span>
-                    <span class="text-indigo-400 font-bold">かがやき 514號</span>
-                </div>
-                <h4 class="font-bold text-sm text-white mt-0.5">搭乘新幹線直達返回東京</h4>
-                <p class="text-xs text-slate-400 mt-1">結束充實的金澤美學散策，返抵東京車站後步行即回四季酒店套房。</p>
             </div>
         </div>
 
+        <!-- ================= CONTENT: OTHER DAYS (BASED ON FOUR SEASONS & TOYAMA) ================= -->
         <!-- ================= CONTENT: DAY 5 ================= -->
         <div id="content-d5" class="tab-content space-y-4">
             <div class="flex justify-between items-center text-xs font-bold text-slate-400 px-1">
@@ -325,7 +395,7 @@
             </div>
         </div>
 
-        <!-- ================= CONTENT: DAY 6 (🌟 NEW: 富山黑部峽谷消暑) ================= -->
+        <!-- ================= CONTENT: DAY 6 (富山黑部峽谷消暑) ================= -->
         <div id="content-d6" class="tab-content space-y-4">
             <div class="flex justify-between items-center text-xs font-bold text-slate-400 px-1">
                 <span class="text-amber-400"><i class="fa-solid fa-star mr-1"></i> 07/16 (四) 富山·黑部峽谷消暑＆白蝦一日遊</span>
@@ -336,7 +406,6 @@
                 <span class="text-amber-400">持 JR Pass 通行</span>
             </div>
 
-            <!-- 節點 1 -->
             <div class="dark-card p-4 rounded-2xl space-y-2">
                 <div class="flex items-start space-x-3">
                     <input type="checkbox" onclick="updateProgress('d6')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
@@ -346,98 +415,52 @@
                             <span class="text-amber-400 font-bold">🚄 北陸新幹線</span>
                         </div>
                         <h4 class="font-bold text-sm text-white mt-0.5">搭乘北陸新幹線 · 最速前往北陸</h4>
-                        <p class="text-xs text-slate-400 mt-1">自【東京車站】上車，沿途欣賞群馬至長野的翠綠山巒美景，直達【富山車站】。</p>
+                        <p class="text-xs text-slate-400 mt-1">自【東京車站】上車，最速直達【富山車站】。</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 節點 2 -->
             <div class="dark-card p-4 rounded-2xl space-y-2">
                 <div class="flex items-start space-x-3">
                     <input type="checkbox" onclick="updateProgress('d6')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
                     <div class="flex-1">
-                        <div class="flex justify-between text-[11px] font-mono text-slate-500">
-                            <span>🕒 08:31 - 09:14</span>
-                            <span class="text-emerald-400 font-bold">物理鐵道轉乘</span>
-                        </div>
-                        <h4 class="font-bold text-sm text-white mt-0.5">轉乘地方鐵道前往峽谷入口</h4>
-                        <p class="text-xs text-slate-400 mt-1">從富山站改札口步行至【電鐵富山站】，搭乘「宇奈月1號」地鐵特急前往【宇奈月溫泉站】。</p>
+                        <h4 class="font-bold text-sm text-white">轉乘地方鐵道前往峽谷入口</h4>
+                        <p class="text-xs text-slate-400 mt-1">換乘富山地鐵特急「宇奈月1號」前往【宇奈月溫泉站】。</p>
                     </div>
                 </div>
-                <a href="https://www.google.com/maps/search/?api=1&query=宇奈月溫泉車站" target="_blank" class="w-full flex items-center justify-center space-x-1 bg-slate-800 hover:bg-slate-700 text-slate-300 py-1 text-xs rounded-md border border-slate-700 transition"><i class="fa-solid fa-map-pin"></i> <span>導航至宇奈月溫泉站</span></a>
             </div>
 
-            <!-- 節點 3 -->
             <div class="highlight-card p-4 rounded-2xl space-y-2">
                 <div class="flex items-start space-x-3">
                     <input type="checkbox" onclick="updateProgress('d6')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
                     <div class="flex-1">
-                        <div class="flex justify-between text-[11px] font-mono text-indigo-400">
-                            <span>🕒 09:42 - 11:40</span>
-                            <span class="text-amber-400 font-bold"><i class="fa-solid fa-snowflake mr-1"></i> 核心消暑</span>
-                        </div>
-                        <h4 class="font-bold text-sm text-white mt-0.5">黑部峽谷小火車 · 享受天然冷氣</h4>
-                        <p class="text-xs text-slate-300 mt-1">於【宇奈月站】乘車。穿越絕壁與清流，欣賞深山絕景。建議：可坐到「鐘釣站」下車，前往體驗觸摸冰涼的雪溪溪水。</p>
+                        <h4 class="font-bold text-sm text-white">黑部峽谷小火車 · 享受天然冷氣</h4>
+                        <p class="text-xs text-slate-300 mt-1">穿越絕壁與清流，欣賞深山絕景。可坐到「鐘釣站」下車體驗雪溪溪水。</p>
                     </div>
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=黑部峽谷鐵道+宇奈月站" target="_blank" class="w-full flex items-center justify-center space-x-1 bg-amber-400 hover:bg-amber-500 text-slate-950 py-1.5 text-xs font-bold rounded-lg shadow-lg transition"><i class="fa-solid fa-train"></i> <span>導航至黑部小火車宇奈月站</span></a>
             </div>
 
-            <!-- 節點 4 -->
-            <div class="dark-card p-4 rounded-2xl space-y-2">
-                <div class="flex items-start space-x-3">
-                    <input type="checkbox" onclick="updateProgress('d6')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
-                    <div class="flex-1">
-                        <div class="flex justify-between text-[11px] font-mono text-slate-500">
-                            <span>🕒 11:40 - 12:50</span>
-                            <span>↩️ 回程鐵道</span>
-                        </div>
-                        <h4 class="font-bold text-sm text-white mt-0.5">漫步宇奈月溫泉街後返程</h4>
-                        <p class="text-xs text-slate-400 mt-1">小火車返回後短暫漫步溫泉老街，隨後搭乘富山地鐵返回【富山車站】。</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 節點 5 (鮮甜海鮮) -->
             <div class="bg-gradient-to-br from-amber-950/40 via-slate-900 to-slate-950 p-4 rounded-2xl shadow-md border border-amber-950 space-y-3">
                 <div class="flex items-start space-x-3">
                     <input type="checkbox" onclick="updateProgress('d6')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
                     <div class="flex-1">
-                        <div class="flex justify-between text-[11px] font-mono text-amber-400">
-                            <span>🕒 13:00 - 14:30</span>
-                            <span class="font-bold"><i class="fa-solid fa-shrimp mr-1"></i> 舌尖震撼</span>
-                        </div>
-                        <h4 class="font-bold text-sm text-white mt-0.5">白えび亭（白蝦亭）· 富山灣寶石饗宴</h4>
-                        <p class="text-xs text-slate-300 mt-1"><strong>地點：</strong> 富山站內。必吃手工現剝近百隻白蝦的「白蝦刺身丼」，入口即化爆發鮮甜！亦推薦現炸白蝦天婦羅。</p>
+                        <h4 class="font-bold text-sm text-white">白えび亭（白蝦亭）· 富山灣寶石饗宴</h4>
+                        <p class="text-xs text-slate-300 mt-1"><strong>地點：</strong> 富山站內。必吃手工現剝近百隻白蝦的「白蝦刺身丼」與現炸白蝦天婦羅。</p>
                     </div>
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=白えび亭+富山駅" target="_blank" class="w-full flex items-center justify-center space-x-1 bg-amber-400 hover:bg-amber-500 text-slate-950 py-1.5 text-xs font-bold rounded-lg shadow-sm transition"><i class="fa-solid fa-utensils"></i> <span>導航至 白蝦亭 (富山站內)</span></a>
             </div>
 
-            <!-- 節點 6 -->
             <div class="dark-card p-4 rounded-2xl space-y-2">
                 <div class="flex items-start space-x-3">
                     <input type="checkbox" onclick="updateProgress('d6')" class="task-check w-4 h-4 text-amber-400 rounded bg-slate-800 border-slate-700 mt-0.5">
                     <div class="flex-1">
-                        <div class="flex justify-between text-[11px] font-mono text-slate-500">
-                            <span>🕒 14:40 - 15:00</span>
-                            <span class="text-emerald-600 font-bold">☕ 世界最美咖啡廳</span>
-                        </div>
-                        <h4 class="font-bold text-sm text-white mt-0.5">富山環水公園星巴克快速朝聖</h4>
-                        <p class="text-xs text-slate-400 mt-1">在運河河畔外帶消暑星冰樂，欣賞無死角全玻璃景致。</p>
+                        <h4 class="font-bold text-sm text-white">富山環水公園星巴克朝聖 ➔ 傍晚新幹線回程</h4>
+                        <p class="text-xs text-slate-400 mt-1">運河河畔外帶消暑星冰樂。隨後搭乘 15:47 班次新幹線，於 17:56 順利返抵東京車站。</p>
                     </div>
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=富山環水公園星巴克" target="_blank" class="w-full flex items-center justify-center space-x-1 bg-slate-800 hover:bg-slate-700 text-slate-300 py-1 text-xs rounded-md border border-slate-700 transition"><i class="fa-solid fa-camera"></i> <span>導航至 環水公園星巴克</span></a>
-            </div>
-
-            <!-- 節點 7 -->
-            <div class="bg-slate-900 text-slate-100 p-4 rounded-xl shadow-md border border-slate-800 space-y-2">
-                <div class="flex justify-between text-[11px] font-mono text-slate-500">
-                    <span>🕒 15:47 - 17:56</span>
-                    <span class="text-amber-400 font-bold">🚄 新幹線回程</span>
-                </div>
-                <h4 class="font-bold text-sm text-white">搭乘新幹線 · 傍晚返抵東京</h4>
-                <p class="text-xs text-slate-400">自【富山車站】上車，於 18:00 前順利返抵【東京車站】，出站隨即回到緊鄰的丸之內四季酒店，動線舒適。</p>
             </div>
         </div>
 
@@ -489,11 +512,11 @@
         <button onclick="switchTab('d1')" class="flex flex-col items-center space-y-1 text-slate-400 hover:text-white">
             <i class="fa-solid fa-plane-arrival text-base"></i><span class="text-[10px] font-bold">D1 抵達</span>
         </button>
-        <button onclick="switchTab('d4')" class="flex flex-col items-center space-y-1 text-slate-400 hover:text-white">
-            <i class="fa-solid fa-map-location text-base"></i><span class="text-[10px] font-bold">D4 金澤</span>
+        <button onclick="switchTab('d4')" class="flex flex-col items-center space-y-1 text-amber-400 font-bold">
+            <i class="fa-solid fa-map-location text-base text-amber-400"></i><span class="text-[10px]">D4 金澤</span>
         </button>
-        <button onclick="switchTab('d6')" class="flex flex-col items-center space-y-1 text-amber-400 font-bold">
-            <i class="fa-solid fa-shrimp text-base text-amber-400"></i><span class="text-[10px]">D6 富山</span>
+        <button onclick="switchTab('d6')" class="flex flex-col items-center space-y-1 text-slate-400 hover:text-white">
+            <i class="fa-solid fa-shrimp text-base"></i><span class="text-[10px] font-bold">D6 富山</span>
         </button>
     </div>
 
