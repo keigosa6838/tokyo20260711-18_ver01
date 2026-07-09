@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>東京七日 · 2026 夏 | 東京明亮輕奢版 (いち川回歸版)</title>
+    <title>東京七日 · 2026 夏 | 東京明亮輕奢版 (全功能最終版)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -20,7 +20,7 @@
 </head>
 <body class="antialiased pb-28">
 
-    <!-- App Header -->
+    <!-- App Header (東京經典藍金) -->
     <header class="tokyo-gradient text-white p-5 sticky top-0 z-50 shadow-md">
         <div class="max-w-md mx-auto flex justify-between items-center">
             <div>
@@ -44,8 +44,8 @@
             <button onclick="switchTab('d3')" id="tab-d3" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md transition">D3 (7/14)</button>
             <button onclick="switchTab('d4')" id="tab-d4" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md text-amber-600 bg-amber-50/40">D4 (7/15) ⏳</button>
             <button onclick="switchTab('d5')" id="tab-d5" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md transition">D5 (7/16)</button>
-            <button onclick="switchTab('d6')" id="tab-d6" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md text-amber-600 bg-amber-50/40">D6 (7/17) ⏳</button>
-            <button onclick="switchTab('d7')" id="tab-d7" class="nav-tab border-blue-600 border-2 shrink-0 px-4 py-2 text-xs font-bold rounded-xl shadow-md transition">D7 (7/18) 🌟</button>
+            <button onclick="switchTab('d6')" id="tab-d6" class="nav-tab border-blue-600 border-2 shrink-0 px-4 py-2 text-xs font-bold rounded-xl shadow-md text-blue-800 bg-blue-50/60 transition">D6 (7/17) 🍕</button>
+            <button onclick="switchTab('d7')" id="tab-d7" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md text-emerald-800 bg-emerald-50/40 transition">D7 (7/18) 🍣</button>
             <button onclick="switchTab('d8')" id="tab-d8" class="nav-tab shrink-0 px-4 py-2 text-xs font-bold rounded-xl border shadow-md transition">D8 (7/19)</button>
         </div>
 
@@ -168,7 +168,7 @@
             </div>
         </div>
 
-        <!-- ================= CONTENT: DAY 3 (金澤 12 小時高效率行程) ================= -->
+        <!-- ================= CONTENT: DAY 3 (金澤高效 12 小時行程) ================= -->
         <div id="content-d3" class="tab-content space-y-4">
             <div class="flex justify-between items-center text-xs font-bold text-slate-500 px-1">
                 <span>📅 07/14 (二) 金澤一日遊 · 加賀古都精準高效美學</span>
@@ -219,7 +219,7 @@
                 <div class="light-card p-4 rounded-2xl space-y-2">
                     <div class="flex justify-between text-[11px] font-mono text-slate-400"><span>🕒 17:00 – 18:30</span><span class="text-blue-800 font-bold">加賀武士住宅黃昏</span></div>
                     <h4 class="font-bold text-sm text-slate-900">長町武家屋敷跡：參觀米其林三星「野村家」</h4>
-                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">轉往黃土牆與窄巷綿延的武士區。特別安排進入野村家邸宅，在夕陽餘暉的日式庭園中感受加賀武士家族的優雅與禪意。</p>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">轉往黃土牆與窄巷綿延 the 武士區。特別安排進入野村家邸宅，在夕陽餘暉的日式庭園中感受加賀武士家族的優雅與禪意。</p>
                 </div>
 
                 <div class="light-card p-5 rounded-2xl border-l-4 border-amber-400 space-y-2 shadow-sm">
@@ -241,7 +241,7 @@
         <!-- ================= CONTENT: DAY 5 (7/16 富山黑部峽谷核心行程) ================= -->
         <div id="content-d5" class="tab-content space-y-4">
             <div class="flex justify-between items-center text-xs font-bold text-slate-500 px-1">
-                <span class="text-blue-950"><i class="fa-solid fa-shrimp mr-1 text-amber-500"></i> 07/16 (四) 富山·黑部峽谷消暑 & 白蝦刺身一日遊</span>
+                <span>📅 07/16 (四) 富山·黑部峽谷消暑 & 白蝦刺身一日遊</span>
                 <span id="progress-d5" class="text-blue-800 font-bold">0% 完成</span>
             </div>
             
@@ -270,45 +270,62 @@
                     <h4 class="font-bold text-sm text-slate-900">11:40 - 12:50 宇奈月河濱公園親水 ➔ 返回富山</h4>
                     <p class="text-xs text-slate-500">下車後由宇奈月車站步行 5 分鐘前往河濱公園，親手觸摸冰涼融雪溪水，消暑體感極大。</p>
                 </div>
-                <div class="light-card p-5 rounded-2xl border-l-4 border-amber-400 space-y-2 shadow-sm">
+                <div class="light-card p-5 rounded-2xl border-l-4 border-amber-400 space-y-3 shadow-sm">
                     <h4 class="font-bold text-sm text-slate-900">13:00 - 14:30 站內【白えび亭】享用富山灣寶石</h4>
                     <p class="text-xs text-slate-600">必吃手工現剝近百隻白蝦的「白蝦刺身丼」與金黃現炸白蝦天婦羅，入口即化。</p>
                 </div>
                 <div class="light-card p-4 rounded-2xl space-y-2">
                     <h4 class="font-bold text-sm text-slate-900">14:40 - 15:00 世界最美星巴克 ➔ 新幹線回東京</h4>
-                    <p class="text-xs text-slate-500">朝聖富山環水公園星巴克外帶星冰樂，17:56 返抵東京站，步行回套房。</p>
+                    <p class="text-xs text-slate-400">朝聖富山環水公園星巴克外帶星冰樂，17:56 返抵東京站，步行回套房。</p>
                 </div>
             </div>
         </div>
 
-        <!-- ================= CONTENT: DAY 6 (7/17 暫定) ================= -->
+        <!-- ================= CONTENT: DAY 6 (🌟 7/17 修正：加入最新三越前義式晚宴) ================= -->
         <div id="content-d6" class="tab-content space-y-4">
-            <div class="bg-amber-50/60 border border-amber-200 p-5 rounded-2xl text-center shadow-sm space-y-2">
-                <i class="fa-solid fa-clock text-amber-500 text-3xl block mb-2"></i>
-                <h4 class="font-bold text-slate-900 text-sm">📅 D6 (7/17) 行程暫留卡片</h4>
-                <p class="text-xs text-slate-600 leading-relaxed">鄭社長，此日行程已依據您的吩咐先暫時保留。等後續您有任何進一步想法，隨時告訴我便可即時為您填補。</p>
-            </div>
-        </div>
-
-        <!-- ================= CONTENT: DAY 7 (🌟 7/18 新增：いち川驚喜回歸晚宴) ================= -->
-        <div id="content-d7" class="tab-content space-y-4">
             <div class="flex justify-between items-center text-xs font-bold text-slate-500 px-1">
-                <span>📅 07/18 (六) 東京都心最終散策與頂級米其林星級饗宴</span>
-                <span id="progress-d7" class="text-blue-800">0% 完成</span>
+                <span>📅 07/17 (五) 日本橋散策與義式經典微醺晚宴</span>
+                <span id="progress-d6" class="text-blue-800">0% 完成</span>
             </div>
             
             <div class="light-card p-4 rounded-2xl space-y-3">
-                <div class="space-y-3 text-xs text-slate-600">
+                <div class="space-y-2.5 text-xs text-slate-600">
                     <div class="flex items-start space-x-2.5"><input type="checkbox" class="rounded text-indigo-600 bg-slate-50 border-slate-300 w-4 h-4 mt-0.5"> <span><strong>濱離宮恩賜庭園：</strong> 欣賞夏季花菖蒲景緻</span></div>
-                    <div class="flex items-start space-x-2.5"><input type="checkbox" class="rounded text-indigo-600 bg-slate-50 border-slate-300 w-4 h-4 mt-0.5"> <span><strong>築地場外市場：</strong> 新鮮海鮮丼午餐</span></div>
+                    <div class="flex items-start space-x-2.5"><input type="checkbox" class="rounded text-indigo-600 bg-slate-50 border-slate-300 w-4 h-4 mt-0.5"> <span><strong>築地場外市場：</strong> 新鮮極品海鮮丼午餐</span></div>
                     <div class="flex items-start space-x-2.5"><input type="checkbox" class="rounded text-indigo-600 bg-slate-50 border-slate-300 w-4 h-4 mt-0.5"> <span><strong>東京國立博物館 (上野)：</strong> 精密文物與大師藏品鑑賞</span></div>
-                    <div class="flex items-start space-x-2.5"><input type="checkbox" class="rounded text-indigo-600 bg-slate-50 border-slate-300 w-4 h-4 mt-0.5"> <span><strong>淺草散策 / 晴空塔：</strong> 最終伴手禮補貨與東京最終夜景</span></div>
                 </div>
-                <div class="grid grid-cols-3 gap-2 pt-2">
+                <div class="grid grid-cols-2 gap-2 pt-1">
                     <a href="https://www.google.com/maps/search/?api=1&query=濱離宮恩賜庭園" target="_blank" class="bg-slate-50 border p-1.5 text-[10px] text-center rounded-lg text-slate-700 font-bold">🗺️ 濱離宮</a>
                     <a href="https://www.google.com/maps/search/?api=1&query=築地場外市場" target="_blank" class="bg-slate-50 border p-1.5 text-[10px] text-center rounded-lg text-slate-700 font-bold">🗺️ 築地</a>
-                    <a href="https://www.google.com/maps/search/?api=1&query=東京晴空塔" target="_blank" class="bg-slate-50 border p-1.5 text-[10px] text-center rounded-lg text-slate-700 font-bold">🗺️ 晴空塔</a>
                 </div>
+            </div>
+
+            <!-- 新增義式晚宴項目 -->
+            <div class="light-card p-5 rounded-2xl border-l-4 border-blue-800 space-y-4 shadow-sm">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <span class="text-[10px] font-bold text-blue-800 bg-blue-50 border border-blue-200 px-2.5 py-1 rounded">⭐ 18:30 已確認預約</span>
+                        <h4 class="font-bold text-base text-slate-900 mt-2.5">Che Voglia!（三越前 COREDO室町1）</h4>
+                        <p class="text-xs text-slate-600 mt-1">正宗米蘭薄脆披薩與精緻義式割烹料理。3名様</p>
+                        <p class="text-[11px] text-slate-500 font-mono mt-1">🆔 <strong>預約編號：</strong> Q7ANL5 | 登記名字：鄭世傑 様</p>
+                    </div>
+                    <i class="fa-solid fa-pizza-slice text-blue-800 text-xl mt-1"></i>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Che+Voglia+COREDO室町" target="_blank" class="w-full flex items-center justify-center space-x-2 bg-blue-800 hover:bg-blue-900 text-white text-xs font-bold py-2.5 rounded-xl transition shadow-md">
+                    <i class="fa-solid fa-location-arrow"></i> <span>🗺️ 地圖導航：COREDO室町1 (Che Voglia!)</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- ================= CONTENT: DAY 7 (7/18 いち川回歸) ================= -->
+        <div id="content-d7" class="tab-content space-y-4">
+            <div class="flex justify-between items-center text-xs font-bold text-slate-500 px-1">
+                <span>📅 07/18 (六) 東京都心購物與高端星級壽司晚宴</span>
+                <span id="progress-d7" class="text-blue-800">0% 完成</span>
+            </div>
+            
+            <div class="light-card p-4 rounded-2xl space-y-2 text-xs text-slate-500">
+                <p>🛍️ <strong>白天行程：</strong> 淺草雷門散策、東京晴空塔最終夜景鳥瞰、以及日本橋周邊伴手禮最終採購補貨。</p>
             </div>
 
             <!-- 東麻布 いち川 重新排入 -->
@@ -318,7 +335,7 @@
                         <span class="text-[10px] font-bold text-amber-800 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded">⭐ 18:00 最新確認預約</span>
                         <h4 class="font-bold text-base text-slate-900 mt-2.5">東麻布 いち川</h4>
                         <p class="text-xs text-slate-600 mt-1">季節の厳選食材コース (¥25,000/人) | 3名様</p>
-                        <p class="text-[11px] text-slate-500 mt-1">💡 秘書提示：いち川為極高級會席料理，**飯店強烈建議著正式正裝 (Smart Formal)** 前往享用。</p>
+                        <p class="text-[11px] text-slate-500 mt-1">💡 秘書提示：いち川為頂級會席壽司料理，飯店建議著正裝 (Smart Formal) 前往享用。</p>
                     </div>
                     <i class="fa-solid fa-utensils text-amber-500 text-xl mt-1"></i>
                 </div>
@@ -336,7 +353,7 @@
                 <span class="text-[10px] font-black text-blue-800 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">FHR 保證權益</span>
                 <h4 class="font-bold text-sm text-slate-900 mt-1">享用早餐 ➔ 四季延遲退房</h4>
                 <p class="text-xs text-slate-500 leading-relaxed">
-                    全面享有 **AMEX FHR 權益保障的延遲退房至下午 16:00**（或配合您的機場接駁時間提早辦理）。上午可在東京車站、丸之內商圈做最後伴手禮採買，隨後不慌不忙返回套房清點行李。
+                    全面享有 AMEX FHR 權益保障的延遲退房至下午 16:00。上午可在東京車站、丸之內商圈做最後伴手禮採買，隨後不慌不忙返回套房清點行李。
                 </p>
                 
                 <div class="p-3 bg-slate-50 rounded-xl text-xs text-slate-600 border border-slate-200 leading-relaxed">
